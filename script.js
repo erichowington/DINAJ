@@ -5,6 +5,7 @@ const inputTag = document.querySelector("input")
 const button = document.querySelector("button")
 const reportDiv = document.querySelector(".Report")
 
+
 function fetchWeather(city) {
     fetch(`${baseUrl}/data/2.5/weather?q=${city}&appid=${key}&units=imperial`)
         .then(res => {
@@ -33,26 +34,28 @@ function displayResults(weatherData) {
     let htmlMock
     if (weatherData.main.temp < 25) {
         htmlMock = `
-        <h2>${weatherData.main.temp}</h2>
-        <p>YEAH, YOU NEED A WINTER JACKET</p>
+        <h2>YEAH, YOU NEED A WINTER JACKET</h2>
+        <p>${weatherData.main.temp}</p>
     `
     }
     else if (weatherData.main.temp > 25 && weatherData.main.temp <= 45){
         htmlMock=`
-        <h2>${weatherData.main.temp}</h2>
-        <p>YEAH,YOU NEED A MEDIUM JACKET</p>
+        <h2>YEAH,YOU NEED A MEDIUM JACKET</h2>
+        <p>The current temp is ${weatherData.main.temp} degrees. </p>
     `
     }
     else if (weatherData.main.temp > 45 && weatherData.main.temp <= 64){
         htmlMock=`
-        <h2>${weatherData.main.temp}</h2>
-        <p>YEAH, YOU COULD USE A LIGHT JACKET(or a sweatshirt)</p>
+        <h2>YEAH, YOU COULD USE A LIGHT JACKET(or a sweatshirt)</h2>
+        <p>The current temp is ${weatherData.main.temp} degrees.</p>
+        
     `
     }
     else if (weatherData.main.temp > 65){
         htmlMock=`
-        <h2>${weatherData.main.temp}</h2>
-        <p>NOPE, SHORT SLEEVES WOO HOO</P>
+        <h2>NOPE, SHORT SLEEVES WOO HOO</h2>
+        <p>The current temp is ${weatherData.main.temp} degress.</p>
+        
     `}
 
     reportDiv.innerHTML = "";
