@@ -29,21 +29,24 @@ button.addEventListener("click", () => {
 });
 
 function displayResults(weatherData) {
-  console.log(weatherData);
+  console.log(weatherData.name);
   let htmlMock;
   const roundedTemp = Math.floor(weatherData.main.temp);
   if (weatherData.main.temp < 25) {
     htmlMock = `
+        <h1>${weatherData.name}</h1>
         <h2>YEAH, YOU NEED A WINTER JACKET</h2>
         <p>${roundedTemp}</p>
     `;
   } else if (weatherData.main.temp > 25 && weatherData.main.temp <= 45) {
     htmlMock = `
+        <h1>${weatherData.name}</h1>
         <h2>YEAH,YOU NEED A MEDIUM JACKET</h2>
         <p>The current temp is ${roundedTemp} degrees. </p>
     `;
   } else if (weatherData.main.temp > 45 && weatherData.main.temp <= 64) {
     htmlMock = `
+        <h1>${weatherData.name}</h1>
         <h2>YEAH, YOU COULD USE A LIGHT JACKET(or a sweatshirt)</h2>
         <p>The current temp is ${roundedTemp} degrees.</p>
         
