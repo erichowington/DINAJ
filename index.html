@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do I need a jacket??</title>
     <link rel="stylesheet" href="style.css">
-    <script src= "citylist.js" defer></script>
     <script src= "script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="DINAJ"></div>
+    <div class="image-wrapper">
+        <div class="DINAJ"></div>
+    </div>
     <div class="Instruction">Enter your city below and find out!</div>
     
     <input type="text">
     <button class="Button">Submit</button>
 
+    <marquee class="loading-spinner" scrollamount="10">THIS IS A LOADING SPINNER</marquee>
     <div class="Answer"></div>
-    <div class="Report">
-        
+    <div class="report"></div>
+    <div class="extended-report">
+        <ul class="extended-report__list">
+        </ul>
     </div>
 
-    
 </body>
 </html>
