@@ -7,9 +7,9 @@ Through geolocation, we'll let you know if you need a jacket.
 
 Based on your location or city entered, we can determine if you do infact, need a jacket, and what kind of jacket you might need.
 
+<h3>WIREFRAME</h3>
 
-![alt text](https://i.imgur.com/A4vYG7I.jpeg)
-
+![alt text](https://i.imgur.com/p3rYE8X.jpeg)
 
 
 ## API Reference
@@ -22,7 +22,7 @@ Based on your location or city entered, we can determine if you do infact, need 
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | db1ac38dac6827d5ace292718e7f7db1 |
+| `api_key` | `string` | db1ac38dac6827d5ace2927xxxxxxx |
 
 #### Get item
 
@@ -34,3 +34,12 @@ Based on your location or city entered, we can determine if you do infact, need 
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | https://api.openweathermap.org/data/2.5/weather?q=city name&appid=API key|
 
+<h3>Media Query</h3>
+
+![alt text](https://i.imgur.com/A4vYG7I.jpeg)
+
+
+<h3>Languages Used</h3>
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JAVASCRIPT</h4>
