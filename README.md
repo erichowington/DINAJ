@@ -8,7 +8,7 @@ Through geolocation, we'll let you know if you need a jacket.
 Based on your location or city entered, we can determine if you do infact, need a jacket, and what kind of jacket you might need.
 
 
-![alt text](http://images/DINAJ-MEDIA-QUERY.jpeg)
+![alt text](https://github.com/[erichowington]/[DINAJ]/blob/[branch]/DINAJ-MEDIA-QUERY.jpeg?raw=true)
 
 
 
